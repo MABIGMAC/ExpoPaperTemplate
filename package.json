@@ -1,81 +1,81 @@
 {
-  "name": "ExpoPaperTemplate",
-  "version": "1.0.0",
-  "main": "src/index.ts",
-  "scripts": {
-    "start": "expo start --tunnel",
-    "commit-msg": "commitlint -e",
-    "commit": "git add . && git-cz",
-    "lint": "eslint \"apps/**/*.ts\" \"libs/**/*.ts\" \"tests/**/*.ts\"",
-    "lint:staged": "lint-staged",
-    "lint:fix": "eslint --fix \"apps/**/*.ts\" \"libs/**/*.ts\" \"tests/**/*.ts\"",
-    "pre-commit": "npm run lint:staged && npm run test:unit",
-    "test:e2e": "echo \"Error: no test specified\"",
-    "test:integration": "echo \"Error: no test specified\"",
-    "test:unit": "echo \"Error: no test specified\"",
-    "prepare": "husky",
-    "release:major": "standard-version --release-as major && git push --follow-tags",
-    "release:minor": "standard-version --release-as minor && git push --follow-tags",
-    "release:patch": "standard-version --release-as patch && git push --follow-tags"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/neverovski/nodejs-eslint-prettier-husky.git"
-  },
-  "author": "Dmitry Neverovski <dmitryneverovski@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/neverovski/nodejs-eslint-prettier-husky/issues",
-    "email": "dmitryneverovski@gmail.com"
-  },
-  "homepage": "https://github.com/neverovski/nodejs-eslint-prettier-husky#readme",
-  "engines": {
-    "node": "^20",
-    "npm": "^10"
-  },
-  "dependencies": {
-    "expo": "~52.0.41",
-    "expo-status-bar": "~2.0.1",
-    "react": "18.3.1",
-    "react-native": "0.78.1",
-    "react-native-paper": "^5.13.1",
-    "react-native-safe-area-context": "^5.3.0",
-    "react-native-vector-icons": "^10.2.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@commitlint/cli": "^19.8.0",
-    "@commitlint/config-conventional": "^19.8.0",
-    "@commitlint/cz-commitlint": "^19.8.0",
-    "@types/jest": "^29.5.14",
-    "@types/node": "^20.17.28",
-    "@types/react": "~18.3.12",
-    "commitizen": "^4.3.1",
-    "commitlint": "^19.8.0",
-    "eslint": "^8.57.0",
-    "eslint-config-airbnb-typescript": "^17.1.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "^3.10.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-prettier": "^5.2.5",
-    "eslint-plugin-typescript-sort-keys": "^3.3.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.5.0",
-    "prettier": "^3.5.3",
-    "standard-version": "^9.5.0",
-    "ts-node": "^10.9.2",
-    "tsc-watch": "^6.2.1",
-    "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.8.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "@commitlint/cz-commitlint"
-    }
-  },
-  "lint-staged": {
-    "**/*.(js|jsx|ts|tsx)": [
-      "eslint --fix"
-    ]
-  }
+	"name": "ExpoPaperTemplate",
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"scripts": {
+		"start": "expo start --tunnel",
+		"commit-msg": "commitlint -e",
+		"commit": "git add . && git-cz",
+		"lint": "eslint \"apps/**/*.ts\" \"libs/**/*.ts\" \"tests/**/*.ts\"",
+		"lint:staged": "lint-staged",
+		"lint:fix": "eslint --fix \"apps/**/*.ts\" \"libs/**/*.ts\" \"tests/**/*.ts\"",
+		"pre-commit": "npm run lint:staged && npm run test:unit",
+		"test:e2e": "echo \"Error: no test specified\"",
+		"test:integration": "echo \"Error: no test specified\"",
+		"test:unit": "echo \"Error: no test specified\"",
+		"prepare": "husky",
+		"release:major": "standard-version --release-as major && git push --follow-tags",
+		"release:minor": "standard-version --release-as minor && git push --follow-tags",
+		"release:patch": "standard-version --release-as patch && git push --follow-tags"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/neverovski/nodejs-eslint-prettier-husky.git"
+	},
+	"author": "Dmitry Neverovski <dmitryneverovski@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/neverovski/nodejs-eslint-prettier-husky/issues",
+		"email": "dmitryneverovski@gmail.com"
+	},
+	"homepage": "https://github.com/neverovski/nodejs-eslint-prettier-husky#readme",
+	"engines": {
+		"node": "^20",
+		"npm": "^10"
+	},
+	"dependencies": {
+		"expo": "~52.0.44",
+		"expo-status-bar": "~2.0.1",
+		"react": "18.3.1",
+		"react-native": "0.76.7",
+		"react-native-paper": "^5.13.1",
+		"react-native-safe-area-context": "4.14.1",
+		"react-native-vector-icons": "^10.2.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.25.2",
+		"@commitlint/cli": "^19.8.0",
+		"@commitlint/config-conventional": "^19.8.0",
+		"@commitlint/cz-commitlint": "^19.2.0",
+		"@types/jest": "^29.5.14",
+		"@types/node": "^20.17.30",
+		"@types/react": "~18.3.12",
+		"commitizen": "^4.3.1",
+		"commitlint": "^19.8.0",
+		"eslint": "^8.57.1",
+		"eslint-config-airbnb-typescript": "^17.1.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-import": "^2.31.0",
+		"eslint-plugin-prettier": "^5.2.6",
+		"eslint-plugin-typescript-sort-keys": "^3.2.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.5.0",
+		"prettier": "^3.5.3",
+		"standard-version": "^9.5.0",
+		"ts-node": "^10.9.2",
+		"tsc-watch": "^6.2.1",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.8.2"
+	},
+	"config": {
+		"commitizen": {
+			"path": "@commitlint/cz-commitlint"
+		}
+	},
+	"lint-staged": {
+		"**/*.(js|jsx|ts|tsx)": [
+			"eslint --fix"
+		]
+	}
 }
